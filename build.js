@@ -40,7 +40,7 @@ function getArticles() {
             j++
         }
         let articleName = articles[i]['title'].replace(/\s/g, '_').toLowerCase()
-        articles[i]['href'] = `/articles/${articleName}.html`
+        articles[i]['href'] = `articles/${articleName}.html`
         fs.writeFileSync(`./docs/articles/${articleName}.html`, articleTemplate({
             article: md.render(it)
         }))
