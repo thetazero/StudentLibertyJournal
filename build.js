@@ -5,9 +5,9 @@ const handlebars = require('handlebars')
 const MarkdownIt = require('markdown-it'),
     md = new MarkdownIt();
 
-rimraf.sync('./deploy')
-copydir.sync('./static', './deploy');
-fs.mkdirSync('./deploy/articles')
+rimraf.sync('./docs')
+copydir.sync('./static', './docs');
+fs.mkdirSync('./docs/articles')
 
 let article = fs.readFileSync('./template/article.html', 'utf8')
 let articleTemplate = handlebars.compile(article)
@@ -18,7 +18,7 @@ let indexTemplate = handlebars.compile(index)
 let data = {
     articles: getArticles()
 }
-fs.writeFileSync('./deploy/index.html', indexTemplate(data))
+fs.writeFileSync('./docs/index.html', indexTemplate(data))
 // console.log(index)
 // getArticles()
 console.log(data.articles)
@@ -41,7 +41,7 @@ function getArticles() {
         }
         let articleName = articles[i]['title'].replace(/\s/g, '_').toLowerCase()
         articles[i]['href'] = `/articles/${articleName}.html`
-        fs.writeFileSync(`./deploy/articles/${articleName}.html`, articleTemplate({
+        fs.writeFileSync(`./docs/articles/${articleName}.html`, articleTemplate({
             article: md.render(it)
         }))
         console.log(i, articles[i])
