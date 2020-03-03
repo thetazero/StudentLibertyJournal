@@ -1,8 +1,8 @@
 window.customElements.define('slj-theme-swap', class extends HTMLElement {
-    constructor() {
-        super()
-        let shadow = this.attachShadow({ mode: 'open' });
-        shadow.innerHTML=`
+  constructor() {
+    super()
+    let shadow = this.attachShadow({ mode: 'open' });
+    shadow.innerHTML = `
         <style>
           :host{
             cursor:pointer;
@@ -73,9 +73,11 @@ input:checked + .slider:before {
           <span class="slider"></span>
         </label>
         `
-        this.shadowRoot.querySelector('input').onclick = () => {
-            theme(!darkTheme)
-            darkTheme = !darkTheme
-        }
+    if (window.localStorage.getItem('darktheme') === 'false') this.shadowRoot.querySelector('input').click()
+    this.shadowRoot.querySelector('input').onclick = () => {
+      theme(!darkTheme)
+      darkTheme = !darkTheme
+      window.localStorage.setItem('darktheme', darkTheme)
     }
+  }
 })

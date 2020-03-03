@@ -23,6 +23,7 @@ function theme(dark) {
   themeElem.innerHTML += `}`
 }
 
-
 let darkTheme = true
+if (window.localStorage.getItem('darktheme') == 'false') darkTheme = false
+
 theme(darkTheme)
