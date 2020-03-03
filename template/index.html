@@ -11,6 +11,7 @@
   <script src="components/nav.js"></script>
   <script src="components/sidenav.js"></script>
   <script src="components/story.js"></script>
+  <script src="components/small.js"></script>
 </head>
 
 <body>
@@ -20,22 +21,11 @@
     {{#articles}}
     <slj-story title="{{title}}" teaser="{{teaser}}" img="{{img}}" href="{{href}}" date="{{date}}"></slj-story>
     {{/articles}}
-    <!-- <slj-story title="Community college graduates make more than Yale graduates"
-      teaser="bingle bongle bingle bongle bingle bongle bingle bongle bingle bongle bingle bongle"
-      img="https://news.yale.edu/sites/default/files/styles/featured_media/public/2016_10_12_15-03-40_dsc_0199.jpg"
-      href="https://google.com" date="2/27/2020"></slj-story>
-    <slj-story title="Community college graduates make more than Yale graduates"
-      teaser="bingle bongle bingle bongle bingle bongle bingle bongle bingle bongle bingle bongle"
-      img="https://news.yale.edu/sites/default/files/styles/featured_media/public/2016_10_12_15-03-40_dsc_0199.jpg"
-      href="https://google.com" date="2/27/2020"></slj-story>
-    <slj-story title="Community college graduates make more than Yale graduates"
-      teaser="bingle bongle bingle bongle bingle bongle bingle bongle bingle bongle bingle bongle"
-      img="https://news.yale.edu/sites/default/files/styles/featured_media/public/2016_10_12_15-03-40_dsc_0199.jpg"
-      href="https://google.com" date="2/27/2020"></slj-story>
-    <slj-story title="Community college graduates make more than Yale graduates"
-      teaser="bingle bongle bingle bongle bingle bongle bingle bongle bingle bongle bingle bongle"
-      img="https://news.yale.edu/sites/default/files/styles/featured_media/public/2016_10_12_15-03-40_dsc_0199.jpg"
-      href="https://google.com" date="2/27/2020"></slj-story> -->
+  </div>
+  <div class='small-news'>
+    {{#smallarticles}}
+      <slj-small title="{{title}}" href="{{href}}" date="{{date}}"></slj-small>
+    {{/smallarticles}}
   </div>
 </body>
 

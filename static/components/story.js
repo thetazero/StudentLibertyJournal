@@ -47,6 +47,9 @@ window.customElements.define('slj-story', class extends HTMLElement {
         img{
           width:100%;
         }  
+        :host{
+          height:inherit;
+        }
       }
 
       @media only screen and (min-width: 830px) {

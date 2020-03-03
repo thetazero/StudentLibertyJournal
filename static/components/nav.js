@@ -35,5 +35,6 @@ window.customElements.define('slj-nav', class extends HTMLElement {
         <slj-theme-swap></slj-theme-swap>
       <div>
       `
+    shadow.querySelector('.slj').href = window.location.hostname == "127.0.0.1" ? '/' : "/StudentLibertyJournal"
   }
 })

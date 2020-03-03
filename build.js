@@ -15,13 +15,22 @@ let articleTemplate = handlebars.compile(article)
 let index = fs.readFileSync('./template/index.html', 'utf-8')
 let indexTemplate = handlebars.compile(index)
 
+let articles = getArticles()
+articles.push(...articles)
+articles.push(...articles)
+// console.log(articles)
 let data = {
-    articles: getArticles()
+    articles: articles.filter(({ bignews }) => {
+        return bignews == '1'
+    }).slice(0, 9),
+    smallarticles: articles.filter(({ bignews }) => {
+        return bignews == '0'
+    }).slice(0, 15),
 }
 fs.writeFileSync('./docs/index.html', indexTemplate(data))
 // console.log(index)
 // getArticles()
-console.log(data.articles)
+// console.log(data.articles)
 
 function getArticles() {
     let articles = []
@@ -44,7 +53,7 @@ function getArticles() {
         fs.writeFileSync(`./docs/articles/${articleName}.html`, articleTemplate({
             article: md.render(it)
         }))
-        console.log(i, articles[i])
+        // console.log(i, articles[i])
     }
     articles.sort((a, b) => { return new Date(b.date) - new Date(a.date) })
     return articles
