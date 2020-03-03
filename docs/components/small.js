@@ -13,7 +13,7 @@ window.customElements.define('slj-small', class extends HTMLElement {
         .title{
           color:var(--ca);
           font-weight:500;
-          font-size:1.1em;
+          font-size:1em;
         }
   
         img{

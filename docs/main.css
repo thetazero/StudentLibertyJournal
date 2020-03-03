@@ -21,13 +21,16 @@ body {
   grid-template-columns: repeat(3, 33.33%);
   grid-gap: 2px;
   padding: 10px 10px 10px 10px;
+  margin-top: 40px;
 }
 
 @media only screen and (max-width: 1240px) {
   .main {
     grid-template-columns: repeat(2, 400px);
   }
-  .article {
+  .small-news {
+    grid-template-columns: repeat(2, 50%);
+    padding: 5px;
   }
 }
 
@@ -38,8 +41,8 @@ body {
     grid-template-columns: 100vw;
   }
   .small-news {
-    grid-template-columns: repeat(2, 50%);
-    padding: 5px;
+    grid-template-columns: 100vw;
+    padding: 0px;
   }
 }
 
