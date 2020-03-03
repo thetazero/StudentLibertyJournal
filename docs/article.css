@@ -1,0 +1,21 @@
+.article {
+  padding: 40px 8px;
+  width: 80vw;
+  margin: auto;
+}
+
+.article img {
+  max-width: 80vw;
+}
+
+@media only screen and (max-width: 1240px) {
+}
+
+@media only screen and (max-width: 830px) {
+  .article {
+    width: 95vw;
+  }
+  .article img {
+    max-width: 95vw;
+  }
+}

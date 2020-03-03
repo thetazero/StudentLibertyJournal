@@ -105,12 +105,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.article {
-  padding: 40px 8px;
-  width: 80vw;
-  margin: auto;
-}
-
 /* Customize website's scrollbar like Mac OS
 Not supports in Firefox and IE */
 
