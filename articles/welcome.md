@@ -1,4 +1,4 @@
-[img]: # (/assets/brad.png)
+[img]: # (/StudentLibertyJournal/assets/brad.png)
 [title]: # (Paly welcome, A resounding success)
 [date]: # (8/21/20)
 [teaser]: # (On the morning of August the Seventeenth, the Administrators of Palo Alto High School led by the new principal, the Honorable Gentleman Brent Klein, unveiled exciting radical new plans to conduct state-of-the-art online learning. The schedule for the first week of school was designed with student integration in mind, with thirty minutes daily, designated as “Paly Welcome,” being solely dedicated to easing the difficult transition students face. Needless to say, the Administration’s proceedings were enormously successful.)
@@ -6,7 +6,7 @@
 
 # Paly welcome, A resounding success
 
-![Brad Klein](/assets/brad.png)
+![Brad Klein](/StudentLibertyJournal/assets/brad.png)
 
 On the morning of August the Seventeenth, the Administrators of Palo Alto High School led by the new principal, the Honorable Gentleman Brent Klein, unveiled exciting radical new plans to conduct state-of-the-art online learning. The schedule for the first week of school was designed with student integration in mind, with thirty minutes daily, designated as “Paly Welcome,” being solely dedicated to easing the difficult transition students face. Needless to say, the Administration’s proceedings were enormously successful.  
 
