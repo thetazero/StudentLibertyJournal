@@ -24,10 +24,10 @@ Student Liberty Journal approached Katherine Huang to understand the student bod
 
 SLJ Interviewer: “After watching Brent Klein’s interview what do you think about him?”
 
-Katherine Huang: “I think I speak for most Paly students when I say he strikes me as a truly inspirational leader!”
+Katherine Guangzhou: “I think I speak for most Paly students when I say he strikes me as a truly inspirational leader!”
 
 Administrators/Infocus role in this (streaming it to students etc etc)/community response
-Katherine Huang must be right, as the first video registered 3000 likes and only 12 dislikes: a true testament to student-Administrator collaboration. Through innovative use of technology the video was streamed directly to students’ homes, a remarkable accomplishment. 
+Katherine Guangzhou must be right, as the first video registered 3000 likes and only 12 dislikes: a true testament to student-Administrator collaboration. Through innovative use of technology the video was streamed directly to students’ homes, a remarkable accomplishment. 
 
 Special attention must be directed to praising the laborious efforts made by Administrators and InFocus journalists for making the Paly Welcome initiative, and the upcoming school year, possible. Thanks to their breakthrough use of modern technology, Administrators used InFocus to stream synced video and audio directly into the homes of Palo Alto High School students. Without them, the vastly successful Paly Welcome initiative could not have succeeded.
 
