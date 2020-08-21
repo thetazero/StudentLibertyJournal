@@ -3,7 +3,9 @@ const copydir = require('copy-dir')
 const fs = require('fs')
 const handlebars = require('handlebars')
 const MarkdownIt = require('markdown-it'),
-    md = new MarkdownIt();
+    md = new MarkdownIt({
+        html: true,
+    });
 
 rimraf.sync('./docs')
 copydir.sync('./static', './docs');
@@ -16,8 +18,6 @@ let index = fs.readFileSync('./template/index.html', 'utf-8')
 let indexTemplate = handlebars.compile(index)
 
 let articles = getArticles()
-articles.push(...articles)
-articles.push(...articles)
 // console.log(articles)
 let data = {
     articles: articles.filter(({ bignews }) => {

@@ -2,10 +2,10 @@ document.head.innerHTML += "<style id='theme'></style>"
 let themeElem = document.getElementById('theme')
 
 let theming = {//[dark,light]
-  bg: ['#333', '#ccc'],
-  bga: ['#222', '#eee'],
-  c: ['#eee', '#111'],
-  ca: ['#ccc', '#333'],
+  bg: ['#222', '#ccc'],
+  bga: ['#181818', '#eee'],
+  c: ['#c0c0c0', '#111'],
+  ca: ['#eee', '#333'],
   'accent-1': ['hsl(140, 20%, 40%)', 'hsl(140, 20%, 60%)'],
   accent0: ['hsl(140, 20%, 50%)', 'hsl(140, 20%, 50%)'],
   navhover: ['hsl(140, 50%, 80%)', 'hsl(140, 50%, 20%)'],
